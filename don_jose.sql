@@ -129,3 +129,53 @@ INSERT INTO producto_categoria (id_producto, id_categoria) VALUES
     (8, 5),
     (9, 5),
     (10, 5);
+UPDATE marca SET nombre = 'Colgate-Palmolive' WHERE id = 1;
+UPDATE marca SET nombre = 'Procter & Gamble' WHERE id = 2;
+UPDATE marca SET nombre = 'Unilever Ltd.' WHERE id = 3;
+UPDATE marca SET nombre = 'Coca-Cola Company' WHERE id = 4;
+UPDATE marca SET nombre = 'PepsiCo, Inc.' WHERE id = 5;
+
+UPDATE categoria SET nombre = 'Cuidado Personal e Higiene' WHERE id = 1;
+UPDATE categoria SET nombre = 'Bebidas y Alimentos' WHERE id = 2;
+UPDATE categoria SET nombre = 'Cuidado del Hogar y Limpieza' WHERE id = 3;
+UPDATE categoria SET nombre = 'Belleza y Cuidado del Cabello' WHERE id = 4;
+UPDATE categoria SET nombre = 'Farmacia y Medicamentos' WHERE id = 5;
+
+UPDATE producto SET precio = 4000 WHERE id = 1;
+UPDATE producto SET cantidad = 80 WHERE id = 2;
+UPDATE producto SET estado = FALSE WHERE id = 3;
+UPDATE producto SET precio = 28000 WHERE id = 4;
+UPDATE producto SET cantidad = 50 WHERE id = 5;
+
+UPDATE producto_categoria SET id_categoria = 1 WHERE id = 1;
+UPDATE producto_categoria SET id_producto = 2 WHERE id = 2;
+UPDATE producto_categoria SET id_producto = 3, id_categoria = 3 WHERE id = 3;
+UPDATE producto_categoria SET id_categoria = 4 WHERE id = 4;
+UPDATE producto_categoria SET id_producto = 5 WHERE id = 5;
+
+DELETE FROM marca WHERE id = 6;
+DELETE FROM marca WHERE id = 7;
+DELETE FROM marca WHERE id = 8;
+DELETE FROM marca WHERE id = 9;
+DELETE FROM marca WHERE id = 10;
+
+DELETE FROM categoria WHERE id = 6;
+DELETE FROM categoria WHERE id = 7;
+DELETE FROM categoria WHERE id = 8;
+DELETE FROM categoria WHERE id = 9;
+DELETE FROM categoria WHERE id = 10;
+
+DELETE FROM producto WHERE id = 6;
+DELETE FROM producto WHERE id = 7;
+DELETE FROM producto WHERE id = 8;
+DELETE FROM producto WHERE id = 9;
+DELETE FROM producto WHERE id = 10;
+
+DELETE FROM producto_categoria WHERE id = 6;
+DELETE FROM producto_categoria WHERE id = 7;
+DELETE FROM producto_categoria WHERE id = 8;
+DELETE FROM producto_categoria WHERE id = 9;
+DELETE FROM producto_categoria WHERE id = 10;
+
+
+
